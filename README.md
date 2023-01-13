@@ -6,15 +6,15 @@ This readme only aims to give the reader a brief introductions of:
 
 
 # HAZOP and LOPA
-HAZOP and LOPA workshops are the main parts of the first phase of the IEC 61508 and IEC 61511 lifecycle. The objective of these two activities are:
+HAZOP and LOPA workshops are the main parts of the first phase of the IEC 61508 and IEC 61511 Functional Safety Management Lifecycle. The objective of these two activities are:
 - to investgiate and predict all the specific harzards within a industrial plant;
-- to find out the existing safegaurds in the design;
+- to find out the existing safeguards in the design;
 - to assess the risk gap to prevent the hazards.
 
 ![image](https://user-images.githubusercontent.com/107201347/212220837-bb79a9d3-b008-4b88-b4be-082767fb6b85.png)
 *A example of HAZOP record. from https://www.consiltant.com/en/process-safety/hazop/*
 
-## Safeguards
+# Safeguards
 The safeguards identified in the study need to be passed into different departments for detailed design and deployment. 
 The most common safegaurds in the industry are "Alarms", "Basic Process Control System Interlocks", "Relief devices", "Safety Instrumentted Functions" and "Passive preventions".
 - **Alarms** aims to alert operator of adnormal situation and required operator manual intervention. Alarms are usually the first defence in a safety incident. 
