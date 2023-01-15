@@ -16,12 +16,16 @@ HAZOP and LOPA workshops are the main parts of the first phase of the IEC 61508 
 
 # Safeguards
 The safeguards identified in the study need to be passed into different departments for detailed design and deployment. 
-The most common safegaurds in the industry are "Alarms", "Basic Process Control System Interlocks", "Relief devices", "Safety Instrumentted Functions" and "Passive preventions".
+The most common safegaurds in the industry are "Alarms", "Basic Process Control System Interlocks", "Relief devices", "Safety Instrumentted Functions" and "Mechanical Integrity".
 - **Alarms** aims to alert operator of adnormal situation and required operator manual intervention. Alarms are usually the first defence in a safety incident. 
 - **Basic Process Control System(BPCS) Interlocks** are automatic functions exist in the BPCS system. They function to exert automatic control of the chemical process. An example would be the autostart of a sump pump.
 - **Relief Devices** are typically relief valves and rupture discs. They are set to raputure or open at a certain pressure to release pressure from the enclosed process.
-- **Safety Instrumentted Functions (SIFs)** are automatic functions exist in the Safety Intrumented System (SIS). They function like interlocks, but they are designed for specific Hazards. All SIFs need to have their own envaluated Safety Integrity Level (SIL) per the IEC 61508. An example would be the shutting off the fuel gas supply to the furnace, if the temperature is too high.
-- **Passive preventions** are usually 
-- 
+- **Safety Instrumentted Functions (SIFs)** are automatic functions exist in the Safety Intrumented System (SIS). They function like interlocks, but they are designed for specific Hazards. All SIFs need to have their own envaluated Safety Integrity Level (SIL) per the IEC 61508. 
+![image](https://user-images.githubusercontent.com/107201347/212571751-4c33b8b9-e340-4a0a-9146-df5fabc7b13a.png)
+An example would be the shutting off the fuel gas supply to the furnace, if the temperature is too high.
+- **Mechanical Integrity** are usually referring physical containment. An example would be dike around a processing vessel
+
+# Safeguard Categories
+
 
 
