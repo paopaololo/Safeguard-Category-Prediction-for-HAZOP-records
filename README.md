@@ -19,6 +19,9 @@ The safeguards identified in the study need to be passed into different departme
 The most common safegaurds in the industry are "Alarms", "Basic Process Control System Interlocks", "Relief devices", "Safety Instrumentted Functions" and "Passive preventions".
 - **Alarms** aims to alert operator of adnormal situation and required operator manual intervention. Alarms are usually the first defence in a safety incident. 
 - **Basic Process Control System(BPCS) Interlocks** are automatic functions exist in the BPCS system. They function to exert automatic control of the chemical process. An example would be the autostart of a sump pump.
-- **Relief Devices** 
+- **Relief Devices** are typically relief valves and rupture discs. They are set to raputure or open at a certain pressure to release pressure from the enclosed process.
+- **Safety Instrumentted Functions (SIFs)** are automatic functions exist in the Safety Intrumented System (SIS). They function like interlocks, but they are designed for specific Hazards. All SIFs need to have their own envaluated Safety Integrity Level (SIL) per the IEC 61508. An example would be the shutting off the fuel gas supply to the furnace, if the temperature is too high.
+- **Passive preventions** are usually 
+- 
 
 
