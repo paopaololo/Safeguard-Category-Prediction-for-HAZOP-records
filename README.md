@@ -1,5 +1,5 @@
 # Safeguard-Category-Prediction-for-HAZOP-records
-This is a project I used to identify the safeguard categories in a Safety Review Workshop, such as HAZOP and LOPA workshops. 
+This is the code I used to identify the safeguard categories in a Safety Risk Analysis Workshop, such as HAZOP and LOPA workshops. 
 This readme only aims to give the reader a brief introductions of:
 1. The background for the applied field - functional safety.
 2. The Naive Bayes algorithm
@@ -12,7 +12,7 @@ Hazard and Operability Study (HAZOP) and Layers of Protection Study (LOPA) works
 - to assess the risk gap to prevent hazards.
 
 ![image](https://user-images.githubusercontent.com/107201347/212220837-bb79a9d3-b008-4b88-b4be-082767fb6b85.png)
-*A example of HAZOP record. from https://www.consiltant.com/en/process-safety/hazop/*
+*An example of HAZOP record. from https://www.consiltant.com/en/process-safety/hazop/*
 
 # Safeguards
 The safeguards identified in the study need to be passed to different departments for detailed design and deployment. 
@@ -24,13 +24,16 @@ The most common safeguards in the industry are "Alarms", "Basic Process Control 
 ![image](https://user-images.githubusercontent.com/107201347/212571751-4c33b8b9-e340-4a0a-9146-df5fabc7b13a.png)
 *The hardware structure of a SIF.  Copyright © exida.com*
 
-- **Mechanical Integrity** are usually referring physical containments. An example would be the dike around a process vessel.
+- **Mechanical Integrity** is usually referring physical containments. An example would be the dike around a process vessel.
 
 # Safeguard Categories
 ![image](https://user-images.githubusercontent.com/107201347/212577687-32ddbe65-ee6e-4bb0-bc2b-f82f48854b37.png)
-Risk Analysis workshops like HAZOP marks the beginning of the lifecycle in the IEC 61508. Its outputs provide valuable information for the design of various systems, i.e. SIS, BPCS, physical layouts, and Alarm systems. Therefore, by identifying the categories of the safeguards, we can direct the right information to the corresponding departments for detailed designs.
 
-Usually, HAZOP recording software does not have the field to capture the safeguard category, which instills obstacles for the autonomous process that channels the information to the right department for in-depth designs. I am using the Naive Bayes Classifier to predict the safeguard categories based on the safeguard description in the HAZOP records.
+*Initial phase of the IEC 61508 Lifecycle.  Copyright © exida.com*
+
+Risk Analysis workshops like HAZOP mark the beginning of the lifecycle in the IEC 61508. Its outputs provide valuable information for the design of various systems, i.e. SIS, BPCS, physical layouts, and Alarm systems. Therefore, by identifying the categories of the safeguards, we can direct the right information to the corresponding departments for detailed designs.
+
+Usually, HAZOP recording software does not have the field to capture the safeguard category, which instills obstacles for the autonomous process that channels the information to the right department for in-depth designs. I am using the Naive Bayes Classifier to predict the safeguard categories, which is based on the safeguard description in the HAZOP records.
 
 # Naive Bayes Classifier
 The Naive Bayes Classifier is a probabilistic classifier based on the Bayes Theorem:
