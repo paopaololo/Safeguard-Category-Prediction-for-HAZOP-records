@@ -6,7 +6,7 @@ This readme only aims to give the reader a brief introductions of:
 
 
 # HAZOP and LOPA
-HAZOP and LOPA workshops are the main parts of the first phase of the IEC 61508 and IEC 61511 Functional Safety Management Lifecycle. The objective of these two activities are:
+Hazard and Operability Study (HAZOP) and Layers of Protection Study (LOPA) workshops are the main parts of the first phase of the IEC 61508 and IEC 61511 Functional Safety Management Lifecycle. The objective of these two activities are:
 - to investigate and predict all the specific hazards within a industrial plant;
 - to find out the existing safeguards in the design;
 - to assess the risk gap to prevent hazards.
@@ -47,7 +47,29 @@ In this use case, I am trying to predict multiple categories ('Instrumented Prot
 
 If we express the probabilistic model in the log-space, we can turn it into a linear classifier, which simplifies the regression model.
 
-## Naive Bayes assumption and why it is suitable for this use case 
+The Native Bayes Classifier uses each word in the safeguard description and passes that "Bag of words" into the calculation model to predict the "classes" of the safeguard.
 
+## Naive Bayes assumptions and why it is suitable for this use case 
+The "Naive" in the Naive Bayes Classifier is naive because it naively assumes all inputs for the model are **independent** of each other. In the context of a textual classifier, it is highly inaccurate. 
 
+For example, consider "High temperature leading to melting polar ice." If we vectorize the whole sentence based on each word, the Naive Bayes Classifier will not read through the whole sentence and realize the grammatical function of "High" as an adjective modifying the noun "temperature". To the algorithm, they are two separate words, without any combined meaning of "Temperature being high" or simply "Hot". 
 
+Another assumption of the Naive Bayes Classifier is the **equal weight** of each input. In our example "High temperature leading to melting polar ice.", the algorithm will give the same importance to the words "high" and "to", even though "to" in this clause is just a preposition.
+
+Even though Naive Bayes assumptions are not ideal for textual classifications, it is efficient in our use case for the following reasons: 
+1. The languages used in HAZOP are highly standardized. IEC 61882 is the international standard that dictates the proper conducting of HAZOP. The "bag of words" passed into the classifier is more or less the same across the oil and gas industry. 
+2. The grammatical structures of the safeguard descriptions are mostly phrases or clauses, instead of full sentences. This reduces the interdependency for each word and another.
+
+# Structure of the algorithm
+This section outlines a brief workflow of the algorithm. Please check the jupyter code for details.
+
+The algorithm follows the workflow below:
+1. Inputting the dataset
+2. Data cleaning
+   a. Transforming safeguard description by removing redundant information and stop words, lowercasing and lemmatizing.
+   b. Transforming and removing outliers in the safeguard category column
+   c. Ordinal encoding of the Categories
+3. Splitting the dataframe into training and test data
+4. Multinomial Naive Bayes Algorithm
+5. Testing the model with new data
+6. Creating Word Clouds for visualization
