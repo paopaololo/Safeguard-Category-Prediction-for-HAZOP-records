@@ -66,9 +66,9 @@ This section outlines a brief workflow of the algorithm. Please check the jupyte
 The algorithm follows the workflow below:
 1. Inputting the dataset
 2. Data cleaning
-   a. Transforming safeguard description by removing redundant information and stop words, lowercasing and lemmatizing.
-   b. Transforming and removing outliers in the safeguard category column
-   c. Ordinal encoding of the Categories
+   - Transforming safeguard description by removing redundant information and stop words, lowercasing and lemmatizing.
+   - Transforming and removing outliers in the safeguard category column
+   - Ordinal encoding of the Categories
 3. Splitting the dataframe into training and test data
 4. Multinomial Naive Bayes Algorithm
 5. Testing the model with new data
