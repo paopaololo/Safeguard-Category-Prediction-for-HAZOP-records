@@ -17,7 +17,7 @@ Hazard and Operability Study (HAZOP) and Layers of Protection Study (LOPA) works
 # Safeguards
 The safeguards identified in the study need to be passed to different departments for detailed design and deployment. 
 The most common safeguards in the industry are "Alarms", "Basic Process Control System Interlocks", "Relief devices", "Safety Instrumented Functions" and "Mechanical Integrity".
-- **Alarms** aim to alert operators of an adnormal situation and required operator manual intervention. Alarms are usually the first defence in a safety incident. 
+- **Alarms** aim to alert operators of an abnormal situation and required operator manual intervention. Alarms are usually the first defence in a safety incident. 
 - **Basic Process Control System(BPCS) Interlocks** are automatic functions that exist in the BPCS system. They function to exert automatic control of the chemical process. An example would be the autostart of a sump pump.
 - **Relief Devices** are typically relief valves and rupture discs. They are set to rupture or open at a certain pressure to release pressure from the enclosed process.
 - **Safety Instrumented Functions (SIFs)** are automatic functions that exist in the Safety Instrumented System (SIS). They function like interlocks, but they are designed for specific Hazards. All SIFs need to have their own evaluated Safety Integrity Level (SIL) per the IEC 61508. An example would be shutting off the fuel gas supply to the furnace if the temperature is too high.
