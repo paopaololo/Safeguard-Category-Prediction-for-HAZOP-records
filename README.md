@@ -70,7 +70,7 @@ The algorithm follows the workflow below:
 1. Inputting the dataset
 2. Data cleaning
    - Transforming safeguard description by removing redundant information and stop words, lowercasing and lemmatizing.
-     - These can reduce the uneven weights of the different words in the description.  
+     >These can reduce the uneven weights of the different words in the description.  
    - Transforming and removing outliers in the safeguard category column.
    - Ordinal encoding of the Categories.
 3. Splitting the dataframe into training and test data
