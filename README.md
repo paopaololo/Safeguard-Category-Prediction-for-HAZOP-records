@@ -1,4 +1,4 @@
-# Safeguard-Category-Prediction-for-HAZOP-records
+# Safeguard Category Prediction for HAZOP records
 This is the code I used to identify the safeguard categories in a Safety Risk Analysis Workshop, such as HAZOP and LOPA workshops. 
 This readme only aims to give the reader a brief introductions of:
 1. The background for the applied field - functional safety.
