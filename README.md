@@ -4,6 +4,8 @@ This readme only aims to give the reader a brief introductions of:
 1. The background for the applied field - functional safety.
 2. The Naive Bayes algorithm
 
+I also did a webinar on this particular use case:
+https://youtu.be/CN8XRyS2Eqs
 
 # HAZOP and LOPA
 Hazard and Operability Study (HAZOP) and Layers of Protection Study (LOPA) workshops are the main parts of the first phase of the IEC 61508 and IEC 61511 Functional Safety Management Lifecycle. The objective of these two activities are:
