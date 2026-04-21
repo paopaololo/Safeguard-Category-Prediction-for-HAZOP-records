@@ -1,8 +1,22 @@
-# Safeguard Category Prediction for HAZOP records
-This is the code I used to identify the safeguard categories in a Safety Risk Analysis Workshop, such as HAZOP and LOPA workshops. 
-This readme only aims to give the reader a brief introductions of:
-1. The background for the applied field - functional safety.
-2. The Naive Bayes algorithm
+# Safeguard Category Prediction for HAZOP Records
+
+This project applies machine-learning methods to classify safeguard descriptions from HAZOP-style process safety records.
+
+## Objective
+Predict safeguard categories from text-based HAZOP records to support review, reporting, and reuse across similar projects.
+
+## Methods
+- Data cleaning and preprocessing
+- Text feature engineering / vectorization
+- Train-test split
+- Classification modeling
+- Evaluation using accuracy, precision, recall, F1 score, and confusion matrix
+
+## Tools
+Python, pandas, scikit-learn, Jupyter Notebook
+
+## Relevance
+This project connects process safety domain knowledge with applied machine learning and text classification.
 
 I also did a webinar on this particular use case:
 https://youtu.be/CN8XRyS2Eqs
